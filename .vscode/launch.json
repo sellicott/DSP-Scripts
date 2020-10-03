@@ -5,6 +5,18 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type":"cppdbg",
+      "request": "launch",
+      "name": "gnuplotlib-test",
+      "program": "${workspaceFolder}/C/plot-test",
+      "args": [],
+      "cwd": "${workspaceFolder}/C",
+      "linux": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb"
+      }
+    },
+    {
       "type": "OctaveDebugger",
       "request": "launch",
       "name": "fft_alias_folding",

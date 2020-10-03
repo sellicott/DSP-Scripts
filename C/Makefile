@@ -21,7 +21,9 @@ CFLAGS := \
     -O0 \
     -fno-omit-frame-pointer -ffloat-store -fno-common -fstrict-aliasing 
 
-all: bin plot-test 
+LDFLAGS := -lm
+
+all: bin plot-test $(SRCS)
 
 plot-test: $(BIN_OBJS)
 	$(CC) $(CFLAGS) $^ ${LDFLAGS} -o $@
