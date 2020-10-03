@@ -1,3 +1,9 @@
+# Output binaries
+plot-test
+
+# Octave
+octave-workspace
+
 # Prerequisites
 *.d
 
